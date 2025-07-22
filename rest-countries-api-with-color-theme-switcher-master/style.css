@@ -2,7 +2,7 @@
 .main-container {
     max-width: 1440px;     /*to adjust the width of the width of the browser max =1440 - fluid container*/
     padding: 0 5%;       /*top and bottom - 0, rt and left = 20*/
-    box-sizing: border-box;   /* prevent overflow of container*/   
+    box-sizing: border-box;   /*prevent overflow of container */  
 
 }
 /*light mode*/
@@ -23,34 +23,44 @@
  }
 
 
-/* /* .column img{
+.column img{
     display: block;
     max-width: 100%; /*makes the image responsive*/
     
- */
+}
 .country-container{
     max-width: 1200px;
     margin-inline: auto;
     margin-top: 16px;
     display: flex;
-    gap: 32px;
+    flex-wrap: wrap;
+    gap: 2rem;
     row-gap: 40px;
-    justify-content: space-center;
+    justify-content: space-around;
+    padding: 2rem;
 }
 .country-cards{
     display: inline-block;/* for making the card side byside*/
     width: 250px;
+    min-height: 320px;
     border-radius: 8px;
     overflow: hidden;
     padding-bottom: 24px;
     box-shadow: 0 0 2px 0px ;
+    transition: transform0 0.3s;
+
 
 }
 .country-cards:hover{
- background-color:gray
+ background-color:gray;
+ transform:scale(1.03);
 }
 .country-cards img{
     width: 100%;
+    height: 150px;
+    object-fit:cover;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
 }
 .card-details{
     padding-inline: 16px;
