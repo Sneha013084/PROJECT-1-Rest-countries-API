@@ -1,0 +1,64 @@
+
+.main-container {
+    max-width: 1440px;     /*to adjust the width of the width of the browser max =1440 - fluid container*/
+    padding: 0 5%;       /*top and bottom - 0, rt and left = 20*/
+    box-sizing: border-box;   /* prevent overflow of container*/   
+
+}
+/*light mode*/
+ body{       /*body = all the visible contents taged inside the body*/
+     background-color: white;
+     color: black;
+
+ }
+     /*dark mode*/
+ body.dark-mode{
+    background-color:black;
+    color: white;
+ }
+ main{
+  height: auto;
+  margin: 0;
+  padding-top: 16px;
+ }
+
+
+/* /* .column img{
+    display: block;
+    max-width: 100%; /*makes the image responsive*/
+    
+ */
+.country-container{
+    max-width: 1200px;
+    margin-inline: auto;
+    margin-top: 16px;
+    display: flex;
+    gap: 32px;
+    row-gap: 40px;
+    justify-content: space-center;
+}
+.country-cards{
+    display: inline-block;/* for making the card side byside*/
+    width: 250px;
+    border-radius: 8px;
+    overflow: hidden;
+    padding-bottom: 24px;
+    box-shadow: 0 0 2px 0px ;
+
+}
+.country-cards:hover{
+ background-color:gray
+}
+.country-cards img{
+    width: 100%;
+}
+.card-details{
+    padding-inline: 16px;
+}
+.details-title{
+  font-size: 24px;
+  margin-block: 16px;
+}
+.card-details p{
+    margin-block: 8px;
+}
