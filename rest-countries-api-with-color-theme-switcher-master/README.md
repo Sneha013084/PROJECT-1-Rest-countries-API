@@ -101,7 +101,23 @@ Live Site URL: Live Demo
                      createElement()
                      innerHTMl
                      append()
+
+   6. Filtered Countries by Region
       
+               Selected the region dropdown (.filter-by-region)
+
+                Added change event listener
+
+                Made dynamic API call based on selected region:
+
+                  fetch(`https://restcountries.com/v3.1/region/${selectedRegion}`)
+
+                Re-rendered only the filtered countries
+
+                Cleared previous countries using countryContainer.innerHTML = ""
+
+
+7.
 
 
 
