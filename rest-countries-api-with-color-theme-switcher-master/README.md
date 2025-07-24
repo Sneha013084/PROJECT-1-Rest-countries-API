@@ -9,10 +9,10 @@ My challenge was to integrate with the [REST Countries API](https://restcountrie
 Your users should be able to:
 
 - See all countries from the API on the homepage
-- Search for a country using an `input` field
+- Search for a country using an `input` field(will add this shortly, knowledge block)
 - Filter countries by region
 - Click on a country to see more detailed information on a separate page
-- Click through to the border countries on the detail page
+- Click through to the border countries on the detail page(working on it)
 - Toggle the color scheme between light and dark mode *(optional)*
 - 
 **My Process**
@@ -84,6 +84,24 @@ Live Site URL: Live Demo
                     Transition effects on hover
 
                     Clean input styles for search and dropdown
+
+5. Fetched Country Data using JavaScript
+
+      Used the REST Countries API
+
+     Endpoint:
+     https://restcountries.com/v3.1/all?fields=name,capital,flags,population,region
+
+     Parsed the JSON response
+
+     Looped through the countryData array using forEach()
+
+     Created and inserted country cards dynamically using(document fragments):
+
+                     createElement()
+                     innerHTMl
+                     append()
+      
 
 
 
