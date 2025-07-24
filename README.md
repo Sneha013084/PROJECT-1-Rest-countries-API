@@ -40,7 +40,7 @@ My challenge was to integrate with the REST Countries API to pull country data a
 
 ## Solution URL: https://github.com/Sneha013084/PROJECT-1-Rest-countries-API
 
-## Live Site URL: Live Demo
+## Live Site URL: https://sneha013084.github.io/PROJECT-1-Rest-countries-API/
 
 ## Building steps in my project:
 
