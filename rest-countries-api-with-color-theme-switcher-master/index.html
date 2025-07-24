@@ -8,6 +8,7 @@
       href="https://fonts.googleapis.com/css?family=Nunito:300,600,800"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -17,6 +18,27 @@
         <button id="theme-toggle">Switch Theme</button>
         <!--top navigation - to change the theme-->
       </div>
+      <main>
+        <div class="search-bar">
+          <div class="search-container">
+            <input type="text" placeholder="search for a country">
+           <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+          <!--filter-->
+          <select class="filter-by-region">
+            <option value="">Filter By Region</option>
+            <option value="Africa">Africa</option>
+            <option value="America">America</option>
+            <option value="Asia">Asia</option>
+            <option value="Europe">Europe</option>
+            <option value="Oceania">Oceania</option>
+          
+          </select>
+
+
+
+        </div>
+      </main>
     </header>
     <main>
       <div class="country-container"></div>

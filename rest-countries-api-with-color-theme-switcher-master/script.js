@@ -11,9 +11,13 @@ toggleButton.addEventListener('click',() => {
 
 // const myCountries =[ "Germany", "United States Of America","Brazil", "Iceland","Afghanistan","Aland Islands", "Albania","Algeria"];
 
+
+  const filterByRegion = document.querySelector('.filter-by-region')
 fetch(
   "https://restcountries.com/v3.1/all?fields=name,capital,flags,population,region"
 )
+
+
   .then((response) => {
     return response.json();
   })
@@ -21,13 +25,16 @@ fetch(
     console.log(countryData);
     countryData.forEach((country) => {
          console.log(country);
-      //create DOM element for the country cards.//
+       
+ 
+      //create DOM: document fragment for the country cards.//
+
       const countryContainer = document.querySelector(".country-container");
       const countrycards = document.createElement("div");
       countrycards.classList.add("country-cards");
       console.log(countrycards);
      
-      const cardHTML = ` <img src="${country.flags.svg}" alt="flag" />
+      const cardHTML = ` <img src="${country.flags.svg}" alt="country.name.common" />
         <div class="card-details">
           <h2 class="details-title">${country.name.common}</h2>
           <p><b>Population: </b>${country.population}</p>
@@ -37,15 +44,50 @@ fetch(
           `;
       countrycards.innerHTML = cardHTML;
       countryContainer.append(countrycards);
-    });
-  });
+    })
+  })
+  //for filtering countries by region
+
+      const countryContainer = document.querySelector(".country-container");
+
+  filterByRegion.addEventListener('change', (event)=>{
+    fetch(
+  `https://restcountries.com/v3.1/region/${filterByRegion.value}`
+)
 
 
-//create a img inside the card
-//Option 1
+  .then((response) => {
+    return response.json();
+  })
+  .then((countryData) => {
+    console.log(countryData);
 
-// const cardsImg= document.createElement('img')
-// cardsImg.src ='https://flagcdn.com/de.svg'
-// countrycards.append(cardsImg)
-// console.log(cardsImg)
+     countryContainer.innerHTML ="";
+    countryData.forEach((country) => {
+         console.log(country);
+       
+ 
+      //create DOM: document fragment for the country cards.//
 
+      const countrycards = document.createElement("div");
+      countrycards.classList.add("country-cards");
+      console.log(countrycards);
+     
+      const cardHTML = ` <img src="${country.flags.svg}" alt="country.name.common" />
+        <div class="card-details">
+          <h2 class="details-title">${country.name.common}</h2>
+          <p><b>Population: </b>${country.population}</p>
+          <p><b>Region: </b>${country.region}</p>
+          <p><b>Capital: </b>${country.capital}</p>  
+          </div> 
+          `;
+      countrycards.innerHTML = cardHTML;
+      countryContainer.append(countrycards);
+    })
+  })
+  
+    console.log(event.target.value);
+  })
+
+
+// i stuck with search functionlity

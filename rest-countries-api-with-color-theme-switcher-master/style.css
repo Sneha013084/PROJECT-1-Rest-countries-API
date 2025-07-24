@@ -7,14 +7,15 @@
 }
 /*light mode*/
  body{       /*body = all the visible contents taged inside the body*/
-     background-color: white;
-     color: black;
+     background-color: hsl(0, 0%, 99%) ;
+     color:hsl(200, 15%, 8%);
 
  }
      /*dark mode*/
  body.dark-mode{
-    background-color:black;
-    color: white;
+    background-color: hsl(207, 26%, 17%);
+    color:  hsl(0, 100%, 100%);
+
  }
  main{
   height: auto;
@@ -30,7 +31,6 @@
 }
 .country-container{
     max-width: 1200px;
-    margin-inline: auto;
     margin-top: 16px;
     display: flex;
     flex-wrap: wrap;
@@ -72,3 +72,37 @@
 .card-details p{
     margin-block: 8px;
 }
+.search-bar{
+    margin-top: 16px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-around;
+}
+.search-container{
+    box-shadow: 0 0 8px 0px;
+    max-width: 400px;
+    width: 100%;
+    border-radius: 4px;
+    padding-left:24px;
+    padding-right: 24px;
+    overflow: hidden;
+    
+
+}
+.search-container input{ 
+    border: 0px; 
+    outline: none;
+    padding: 12px 0px;
+} 
+.filter-by-region{
+    width: 250px;
+    padding: 16px;
+    outline: none;
+    box-shadow: 0 0 8px  0px;
+    border-radius: 4px;
+
+
+}
+/* .search-bar{
+    flex-direction: column;
+} */
