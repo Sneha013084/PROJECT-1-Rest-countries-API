@@ -30,15 +30,17 @@ My challenge was to integrate with the REST Countries API to pull country data a
           
           Dark/Light Mode Toggle
 
-Screenshot of my project
+## Screenshot of my project
+
+
 <img width="1920" height="1060" alt="image" src="https://github.com/user-attachments/assets/ec53939f-dacf-4910-bc59-1c60be4b6f22" />
 
 
-Screenshot of Restcountries API
-Links
-Solution URL: https://github.com/Sneha013084/PROJECT-1-Rest-countries-API
+## Links
 
-Live Site URL: Live Demo
+## Solution URL: https://github.com/Sneha013084/PROJECT-1-Rest-countries-API
+
+## Live Site URL: Live Demo
 
 Building steps in my project:
 Initialized my project as a public repository on GitHub.
