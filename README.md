@@ -31,6 +31,8 @@ Mobile-first responsive design
 Dark/Light Mode Toggle
 
 Screenshot of my project
+<img width="1920" height="1060" alt="image" src="https://github.com/user-attachments/assets/ec53939f-dacf-4910-bc59-1c60be4b6f22" />
+
 
 Screenshot of Restcountries API
 Links
