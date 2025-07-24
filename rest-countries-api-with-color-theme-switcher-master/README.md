@@ -55,17 +55,37 @@ Live Site URL: Live Demo
 
 3. Built the HTML Layout
 
-Added a main container using <div class="main-container">
+        Added a main container using <div class="main-container">
 
-Included:
+            Included:
 
-A theme toggle button (id="theme-toggle")
+                      A theme toggle button (id="theme-toggle")
 
-A search bar (not fully functional yet)
+                      A search bar (not fully functional yet)
 
-A region filter dropdown (class="filter-by-region")
+                      A region filter dropdown (class="filter-by-region")
 
-An empty container for country cards (class="country-container")
+                      An empty container for country cards (class="country-container")
+
+4.Styled the Layout with CSS
+
+        Used modern CSS techniques like:
+
+                      Flexbox for layout (.country-container, .search-bar)
+
+                      Box shadows and border radius for card visuals
+
+                      Responsive image styles
+
+      Implemented:
+
+                    Light and Dark themes using .dark-mode class
+
+                    Transition effects on hover
+
+                    Clean input styles for search and dropdown
+
+
 
 
 4.  Look through the designs to start planning out how you'll tackle the project. This step is crucial to help you think ahead for CSS classes to create reusable styles.
