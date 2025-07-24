@@ -1,5 +1,5 @@
-###Frontend Mentor - REST Countries API with color theme switcher
-Design preview for the REST Countries API with color theme switcher coding challenge
+**Frontend Mentor - REST Countries API with color theme switcher
+Design preview for the REST Countries API with color theme switcher coding challenge**
 
 The challenge
 My challenge was to integrate with the REST Countries API to pull country data and display it like in the designs.
