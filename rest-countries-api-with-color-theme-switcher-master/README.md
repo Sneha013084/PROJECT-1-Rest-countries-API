@@ -117,15 +117,90 @@ Live Site URL: Live Demo
                 Cleared previous countries using countryContainer.innerHTML = ""
 
 
-7.
+7. Implemented Theme Toggle
+
+            Selected the theme toggle button (#theme-toggle)
+
+            Used classList.toggle('dark-mode') to apply dark styles
+
+            Tested switching between light and dark modes
+
+8.(In Progress) Started Search Functionality
+            Created a search input inside .search-container
+
+            Planned to filter country cards based on user input
+
+            Functionality yet to be completed
+
+
+**What I learned**
+
+How to consume a REST API using fetch
+
+Event delegation and DOM manipulation
+
+Using innerHTML, createElement, and append
+
+Creating responsive layouts using Flexbox
+
+Implementing a light/dark theme switcher
+
+I'm proud of below code snippet : 
+
+      const countryContainer = document.querySelector(".country-container");
+      const countrycards = document.createElement("div");
+      countrycards.classList.add("country-cards");
+      console.log(countrycards);
+     
+      const cardHTML = ` <img src="${country.flags.svg}" alt="country.name.common" />
+        <div class="card-details">
+          <h2 class="details-title">${country.name.common}</h2>
+          <p><b>Population: </b>${country.population}</p>
+          <p><b>Region: </b>${country.region}</p>
+          <p><b>Capital: </b>${country.capital}</p>  
+          </div> 
+          `;
+      countrycards.innerHTML = cardHTML;
+      countryContainer.append(countrycards);
+    })
+  })
 
 
 
+### Continued development
 
-4.  Look through the designs to start planning out how you'll tackle the project. This step is crucial to help you think ahead for CSS classes to create reusable styles.
-5. Before adding any styles, structure your content with HTML. Writing your HTML first can help focus your attention on creating well-structured content.
-6. Write out the base styles for your project, including general content styles, such as `font-family` and `font-size`.
-7. Start adding styles to the top of the page and work down. Only move on to the next section once you're happy you've completed the area you're working on.
+I want to improve how I break down large scripts into smaller, manageable modules using ES6 module syntax.
+
+This will help with better organization and reusability of code.
+
+Future Improvements
+Add detailed country pages on click
+
+Enable border country navigation
+
+Implement debounce for search input
+
+Improve accessibility and semantic HTML
+
+Optimize code and add error handling
+
+
+
+To run the project locally:
+
+bash
+Copy
+Edit
+1. Clone the repo
+2. Open `index.html` in your browser
+Or deploy it with services like GitHub Pages, Netlify, or Vercel.
+
+Author:
+Sneha Kurian
+GitHub: Your GitHub Username
+
+Frontend Mentor: @yourfrontendmentor
+
 
 ## Deploying your project
 
