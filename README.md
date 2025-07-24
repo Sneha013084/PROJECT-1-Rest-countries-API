@@ -42,14 +42,15 @@ My challenge was to integrate with the REST Countries API to pull country data a
 
 ## Live Site URL: Live Demo
 
-Building steps in my project:
-Initialized my project as a public repository on GitHub.
+## Building steps in my project:
 
-Created a folder with three core files: index.html, style.css, script.js
+1. Initialized my project as a public repository on GitHub.
 
-Built the HTML Layout
+2. Created a folder with three core files: index.html, style.css, script.js
 
- Added a main container using <div class="main-container">
+    ## Built the HTML Layout
+
+             Added a main container using <div class="main-container">
 
      Included:
 
@@ -60,7 +61,8 @@ Built the HTML Layout
                A region filter dropdown (class="filter-by-region")
 
                An empty container for country cards (class="country-container")
-4.Styled the Layout with CSS
+   
+4. Styled the Layout with CSS
 
     Used modern CSS techniques like:
 
@@ -77,60 +79,62 @@ Built the HTML Layout
                 Transition effects on hover
 
                 Clean input styles for search and dropdown
-Fetched Country Data using JavaScript
+5. Fetched Country Data using JavaScript
 
-Used the REST Countries API
+          Used the REST Countries API
+          
+          Endpoint: https://restcountries.com/v3.1/all?fields=name,capital,flags,population,region
+          
+          Parsed the JSON response
+          
+          Looped through the countryData array using forEach()
+          
+          Created and inserted country cards dynamically using(document fragments):
 
-Endpoint: https://restcountries.com/v3.1/all?fields=name,capital,flags,population,region
+                                  createElement()
+                                  innerHTMl
+                                  append()
+6. Filtered Countries by Region
+                              
+                              Selected the region dropdown (.filter-by-region)
+                              
+                              Added change event listener
+                              
+                              Made dynamic API call based on selected region:
+                              
+                              Fetch(`https://restcountries.com/v3.1/region/${selectedRegion}`)
+                              
+                              Re-rendered only the filtered countries
 
-Parsed the JSON response
+                              Cleared previous countries using countryContainer.innerHTML = ""
+7. Implemented Theme Toggle
 
-Looped through the countryData array using forEach()
-
-Created and inserted country cards dynamically using(document fragments):
-
-              createElement()
-              innerHTMl
-              append()
-Filtered Countries by Region
-
-     Selected the region dropdown (.filter-by-region)
-
-      Added change event listener
-
-      Made dynamic API call based on selected region:
-
-        fetch(`https://restcountries.com/v3.1/region/${selectedRegion}`)
-
-      Re-rendered only the filtered countries
-
-      Cleared previous countries using countryContainer.innerHTML = ""
-Implemented Theme Toggle
-
-     Selected the theme toggle button (#theme-toggle)
-
-     Used classList.toggle('dark-mode') to apply dark styles
-
-     Tested switching between light and dark modes
+                         Selected the theme toggle button (#theme-toggle)
+                    
+                         Used classList.toggle('dark-mode') to apply dark styles
+                    
+                         Tested switching between light and dark modes
+   
 8.(In Progress) Started Search Functionality Created a search input inside .search-container
+          
+                  Planned to filter country cards based on user input
+          
+                  Functionality yet to be completed
+## **What I learned**
 
-        Planned to filter country cards based on user input
+          How to consume a REST API using fetch
+          
+          Event delegation and DOM manipulation
+          
+          Using innerHTML, createElement, and append
+          
+          Creating responsive layouts using Flexbox
+          
+          Implementing a light/dark theme switcher
 
-        Functionality yet to be completed
-What I learned
+## I'm proud of below code snippet :
 
-How to consume a REST API using fetch
-
-Event delegation and DOM manipulation
-
-Using innerHTML, createElement, and append
-
-Creating responsive layouts using Flexbox
-
-Implementing a light/dark theme switcher
-
-I'm proud of below code snippet :
-
+  
   const countryContainer = document.querySelector(".country-container");
   const countrycards = document.createElement("div");
   countrycards.classList.add("country-cards");
@@ -149,65 +153,45 @@ I'm proud of below code snippet :
 })
 })
 
-Continued development
-I want to improve how I break down large scripts into smaller, manageable modules using ES6 module syntax.
+## Continued development
 
-This will help with better organization and reusability of code.
+          I want to improve how I break down large scripts into smaller,to help with better organization and reusability of code.
+          
+          Future Improvements Add detailed country pages on click
+          
+          Enable border country navigation
+          
+          Implement debounce for search input
+          
+          Optimize code and add error handling
 
-Future Improvements Add detailed country pages on click
+## To run the project locally:
 
-Enable border country navigation
+          Open the folder.
+          
+          Double-click index.html (opens in a browser).
+          
+          Use the dropdown to see filtered results.
+          
+          Click the "Switch Theme" button to change themes.
 
-Implement debounce for search input
+### Useful resources:
 
-Improve accessibility and semantic HTML
+1. https://fontawesome.com/icons/arrow-left?f=duotone&s=solid
+2. https://youtu.be/37vxWr0WgQk?si=ogOxZt_YPV2LHjc- : Helped me to fetch data from API.
+3. https://youtu.be/aUzCq-uabhw?si=Lj9vBDn-ChW7fl4D : To work with document elements.
+4. Lesson : HTML and CSS review with accessibility.
+5. Lesson : The Document Object Model
 
-Optimize code and add error handling
 
-To run the project locally:
+## Acknowledgments:
 
-bash Copy Edit
+Bryan helped me with the basic understanding of the project.
 
-Clone the repo
-Open index.html in your browser Or deploy it with services like GitHub Pages, Netlify, or Vercel.
-Author: Sneha Kurian GitHub: Your GitHub Username
 
-Frontend Mentor: @yourfrontendmentor
 
-Deploying your project
-As mentioned above, there are many ways to host your project for free. Our recommended hosts are:
 
-GitHub Pages
-Vercel
-Netlify
-You can host your site using one of these solutions or any of our other trusted providers. Read more about our recommended and trusted hosts.
 
-Create a custom README.md
-We strongly recommend overwriting this README.md with a custom one. We've provided a template inside the README-template.md file in this starter code.
 
-The template provides a guide for what to add. A custom README will help you explain your project and reflect on your learnings. Please feel free to edit our template as much as you like.
 
-Once you've added your information to the template, delete this file and rename the README-template.md file to README.md. That will make it show up as your repository's README file.
 
-Submitting your solution
-Submit your solution on the platform for the rest of the community to see. Follow our "Complete guide to submitting solutions" for tips on how to do this.
-
-Remember, if you're looking for feedback on your solution, be sure to ask questions when submitting it. The more specific and detailed you are with your questions, the higher the chance you'll get valuable feedback from the community.
-
-Sharing your solution
-There are multiple places you can share your solution:
-
-Share your solution page in the #finished-projects channel of the community.
-Tweet @frontendmentor and mention @frontendmentor, including the repo and live URLs in the tweet. We'd love to take a look at what you've built and help share it around.
-Share your solution on other social channels like LinkedIn.
-Blog about your experience building your project. Writing about your workflow, technical choices, and talking through your code is a brilliant way to reinforce what you've learned. Great platforms to write on are dev.to, Hashnode, and CodeNewbie.
-We provide templates to help you share your solution once you've submitted it on the platform. Please do edit them and include specific questions when you're looking for feedback.
-
-The more specific you are with your questions the more likely it is that another member of the community will give you feedback.
-
-Got feedback for us?
-We love receiving feedback! We're always looking to improve our challenges and our platform. So if you have anything you'd like to mention, please email hi@frontendmentor.io.
-
-This challenge is completely free. Please share it with anyone who will find it useful for practice.
-
-Have fun building! 🚀
