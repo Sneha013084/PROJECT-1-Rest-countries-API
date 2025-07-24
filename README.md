@@ -4,7 +4,7 @@ Design preview for the REST Countries API with color theme switcher coding chall
 The challenge
 My challenge was to integrate with the REST Countries API to pull country data and display it like in the designs.
 
-Your users should be able to:
+###Your users should be able to:
 
 See all countries from the API on the homepage
 Search for a country using an input field(will add this shortly, knowledge block)
