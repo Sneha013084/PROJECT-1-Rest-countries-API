@@ -3,31 +3,32 @@
 ## **The challenge**
 My challenge was to integrate with the REST Countries API to pull country data and display it like in the designs.
 
-## Your users should be able to:
+## Users should be able to:
 
-See all countries from the API on the homepage
-Search for a country using an input field(will add this shortly, knowledge block)
-Filter countries by region
-Click on a country to see more detailed information on a separate page
-Click through to the border countries on the detail page(working on it)
-Toggle the color scheme between light and dark mode (optional)
-My Process
+          See all countries from the API on the homepage
+          Search for a country using an input field(will add this shortly, knowledge block)
+          Filter countries by region
+          Click on a country to see more detailed information on a separate page
+          Click through to the border countries on the detail page(working on it)
+          Toggle the color scheme between light and dark mode (optional)
 
-Built With:
+## **My Process**
 
-Semantic HTML5
+## Built With:
 
-CSS3 custom properties
-
-Flexbox and CSS Grid
-
-JavaScript
-
-REST Countries API
-
-Mobile-first responsive design
-
-Dark/Light Mode Toggle
+          Semantic HTML5
+          
+          CSS3 custom properties
+          
+          Flexbox and CSS Grid
+          
+          JavaScript
+          
+          REST Countries API
+          
+          Mobile-first responsive design
+          
+          Dark/Light Mode Toggle
 
 Screenshot of my project
 <img width="1920" height="1060" alt="image" src="https://github.com/user-attachments/assets/ec53939f-dacf-4910-bc59-1c60be4b6f22" />
